@@ -10,8 +10,25 @@
 # * [5]                             -> min = 5, max = 5
 # функции sorted, max и min использовать нельзя!
 
+lst_1 = [4,6,2,1,9,63,-134,566]          #-> max = 566, min = -134
+lst_2 = [-52, 56, 30, 29, -54, 0, -110]  #-> min = -110, max = 56
+lst_3 = [42, 54, 65, 87, 0]              #-> min = 0, max = 87
+lst_4 = [5]                              #-> min = 5, max = 5
+
 def minimum(arr):
-    pass
+    x = arr[0]
+    for i in arr:
+        if i < x:
+            x = i
+    print('min =', x)
+
 
 def maximum(arr):
-    pass
+    x = arr[0]
+    for i in arr:
+        if i > x:
+            x = i
+    print('max =', x)
+
+maximum(lst_3)
+minimum(lst_3)
