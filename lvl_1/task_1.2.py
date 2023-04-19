@@ -18,6 +18,14 @@ my_favorite_songs = [
     ['In This World', 4.02],
 ]
 
+from random import randint
+i, time = 0, 0
+while i < 4:
+    x = my_favorite_songs[randint(0, len(my_favorite_songs)-1)]
+    time += float(x[1])
+    i += 1
+#print(f'Три песни звучат {time} минут')
+
 # Пункт B. 
 # Есть словарь песен 
 # Распечатайте общее время звучания трех случайных песен
@@ -35,12 +43,33 @@ my_favorite_songs_dict = {
     'In This World': 4.02,
 }
 
+from random import randrange
+i, time = 0, 0
+while i < 4:
+    d = list(my_favorite_songs_dict.values())
+    time += d[randrange(len(d))]
+    i += 1
+#print(f'Три песни звучат {time} минут')
+
 # Дополнительно для пунктов A и B
 # Пункт C.
 # Сгенерируйте случайные песни с помощью модуля random
 # import random
 
+
+import random
+songs = list(my_favorite_songs_dict.keys())
+song = random.choice(songs)
+#print(f'Случайная песня из словаря {song}')
+
 # Дополнительно 
 # Пункт D.
 # Переведите минуты и секунды в формат времени. Используйте модуль datetime 
 
+from datetime import datetime
+
+time_song = str(my_favorite_songs_dict.values())
+n = time_song[0]
+#time_in_minutes = datetime.strptime(time_song)
+
+print((time_song))
