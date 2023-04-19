@@ -49,7 +49,7 @@ while i < 4:
     d = list(my_favorite_songs_dict.values())
     time += d[randrange(len(d))]
     i += 1
-#print(f'Три песни звучат {time} минут')
+print(f'Три песни звучат {time} минут')
 
 # Дополнительно для пунктов A и B
 # Пункт C.
@@ -60,7 +60,7 @@ while i < 4:
 import random
 songs = list(my_favorite_songs_dict.keys())
 song = random.choice(songs)
-#print(f'Случайная песня из словаря {song}')
+print(f'Случайная песня из словаря {song}')
 
 # Дополнительно 
 # Пункт D.
