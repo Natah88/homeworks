@@ -30,3 +30,10 @@ store = {
 
 # Пример: "Кроссовки тип 3 (Adidas) - 31 шт, стоимость 50747 руб"
 
+total, total_sum = 0, 0
+
+for product in  store:
+    pass
+
+
+print(f'{product} - {total} шт, стоимость {total_sum} руб')

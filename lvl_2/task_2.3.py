@@ -7,5 +7,14 @@
 # switch_it_up(10000) -> None
 # Использовать условный оператор if-elif-else нельзя!
 
+lst = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+
+
 def switch_it_up(number):
-    pass
+    number = int(input('Введите число'))
+    try:
+        print(lst[number+1])
+    except IndexError:
+        print('None')
+   
+switch_it_up(6)
