@@ -11,10 +11,11 @@ lst = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
 
 
 def switch_it_up(number):
-    number = int(input('Введите число'))
     try:
-        print(lst[number+1])
+        print(lst[number-1])
     except IndexError:
         print('None')
+
+        
    
-switch_it_up(6)
+switch_it_up(9)
