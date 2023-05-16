@@ -36,4 +36,4 @@ for product in  store:
     pass
 
 
-print(f'{product} - {total} шт, стоимость {total_sum} руб')
+# print(f'{product} - {total} шт, стоимость {total_sum} руб')
