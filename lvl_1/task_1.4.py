@@ -30,10 +30,15 @@ store = {
 
 # Пример: "Кроссовки тип 3 (Adidas) - 31 шт, стоимость 50747 руб"
 
-total, total_sum = 0, 0
-
-for product in  store:
-    pass
 
 
-# print(f'{product} - {total} шт, стоимость {total_sum} руб')
+
+def calculate_total_cost(products, store):
+    for product in products:
+        total_cost = 0
+        for item in store[products[product]]:
+            total_cost += item['quantity'] * item['price']
+        print(f"{product} - {sum([item['quantity'] for item in store[products[product]]])} шт, стоимость {total_cost} руб")
+    return True
+
+print(calculate_total_cost(titles, store))
