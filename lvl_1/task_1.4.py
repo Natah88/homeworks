@@ -39,6 +39,6 @@ def calculate_total_cost(products, store):
         for item in store[products[product]]:
             total_cost += item['quantity'] * item['price']
         print(f"{product} - {sum([item['quantity'] for item in store[products[product]]])} шт, стоимость {total_cost} руб")
-    return True
 
-print(calculate_total_cost(titles, store))
+
+calculate_total_cost(titles, store)
